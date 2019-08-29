@@ -1,6 +1,6 @@
 # jobScrape
 
-jobScrape scrapes through the Indeed website's job postings based on given search parameters.
+jobScrape scrapes through Indeed.com's job postings based on given search parameters.
 
 This project was built with Spring Boot and HTMLUnit.
 
