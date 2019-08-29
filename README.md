@@ -4,7 +4,7 @@ jobScrape scrapes through the Indeed website's job postings based on given searc
 
 This project was built with Spring Boot and HTMLUnit.
 
-src/main/java
+    src/main/java
 
     +- com
     
