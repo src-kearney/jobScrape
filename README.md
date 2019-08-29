@@ -9,21 +9,13 @@ This project was built with Spring Boot and HTMLUnit.
     +- com
         +- employme
             +- EmploymeApplication.java
-            
                 +- Controller
-                
                 |   +- ScrapeController.java
-                
                 +- Model
-                
                 |   +- JobPage.java
-                
                 |   +- JobPageRepository.java
-                
                 +- service
-                
                 |   +- IScrapeService.java
-                
                 |   +- ScrapeService.java
                 
               
