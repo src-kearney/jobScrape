@@ -4,7 +4,7 @@ jobScrape scrapes through Indeed.com's job postings based on given search parame
 
 This project was built with Spring Boot and HTMLUnit.
 
-**Still in development. Next additions: More CRUD operations, Account entities and authentication config, CORS security.
+*Still in development. Next additions: More CRUD operations, duplicate check, account entities and authentication config, CORS security.*
 
     src/main/java
 
