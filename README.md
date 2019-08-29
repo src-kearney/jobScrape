@@ -6,10 +6,8 @@ This project was built with Spring Boot and HTMLUnit.
 
     src/main/java
 
-    +- com
-    
-        +- employme
-        
+    +- com<br/>
+        +- employme<br/>
             +- EmploymeApplication.java
             
                 +- Controller
