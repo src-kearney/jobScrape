@@ -1,14 +1,14 @@
 # jobScrape
 
-jobScrape scrapes through Indeed.com job postings based on given search parameters. This project was built with Spring Boot.
+jobScrape scrapes through Indeed.com job postings based on given search parameters. This project was built with Spring Boot and HTMLUnit.
 
 
 API REQUEST PATHS
 
---> http://localhost:8080/api/update
+--> http://localhost:8080/api/update?query={query}&location={location}&pages={pages}
 
 Fills database with newly scraped data and returns new data.
-Takes 3 query params: query, location, pages.
+Takes 3 query params: String query, String location, int pages.
 Returns JSONObject.toString() of job postings that have been added.
 
 
