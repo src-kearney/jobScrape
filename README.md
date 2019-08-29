@@ -1,11 +1,26 @@
 # jobScrape
 
-jobScrape scrapes through Indeed.com job postings based on given search parameters. This project was built with Spring Boot and HTMLUnit.
+jobScrape scrapes through the Indeed website's job postings based on given search parameters.
 
+This project was built with Spring Boot and HTMLUnit.
 
+src/main/java
+    +- com
+        +- employme
+            +- EmploymeApplication.java
+                +- Controller
+                |   +- ScrapeController.java
+                +- Model
+                |   +- JobPage.java
+                |   +- JobPageRepository.java
+                +- service
+                |   +- IScrapeService.java
+                |   +- ScrapeService.java
+                
+              
 API REQUEST PATHS
 
---> http://localhost:8080/api/update?query={query}&location={location}&pages={pages}
+--> http://localhost:8080/api/update?query={myQuery}&location={myLocation}&pages={myPages}
 
 Fills database with newly scraped data and returns new data.
 Takes 3 query params: String query, String location, int pages.
@@ -25,21 +40,21 @@ Returns JSONObject.toString() of all job postings held in database
 
 
 
---> http://localhost:8080/api/findByQuery
+--> http://localhost:8080/api/findByQuery?query={myQuery}
 
 Takes 1 query param: query
 Returns JSONObject.toString() of all job postings held in database with matching query
 
 
 
---> http://localhost:8080/api/findByLocation
+--> http://localhost:8080/api/findByLocation?location={myLocation}
 
 Takes 1 query param: location
 Returns JSONObject.toString() of all job postings held in database with matching location
 
 
 
---> http://localhost:8080/api/findByCompany
+--> http://localhost:8080/api/findByCompany?company={myCompany}
 
 Takes 1 query param: company
 Returns JSONObject.toString() of all job postings held in database with matching company
