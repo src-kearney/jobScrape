@@ -16,7 +16,7 @@ This project was built with Spring Boot and HTMLUnit.
                 +- Model
                 |   +- JobPage.java
                 |   +- JobPageRepository.java
-                +- service
+                +- Service
                 |   +- IScrapeService.java
                 |   +- ScrapeService.java
                 
