@@ -29,33 +29,33 @@ Fills database with newly scraped data and returns new data.
 Takes 3 query params: String query, String location, int pages.
 Returns JSONObject.toString() of job postings that have been added.
 
-
+---
 
     --> http://localhost:8080/api/clear
 
 Clear all job postings that have been added to database.
 
-
+---
 
     --> http://localhost:8080/api/findAll
 
 Returns JSONObject.toString() of all job postings held in database
 
-
+---
 
     --> http://localhost:8080/api/findByQuery?query={myQuery}
 
 Takes 1 query param: query
 Returns JSONObject.toString() of all job postings held in database with matching query
 
-
+---
 
     --> http://localhost:8080/api/findByLocation?location={myLocation}
 
 Takes 1 query param: location
 Returns JSONObject.toString() of all job postings held in database with matching location
 
-
+---
 
     --> http://localhost:8080/api/findByCompany?company={myCompany}
 
@@ -64,7 +64,7 @@ Returns JSONObject.toString() of all job postings held in database with matching
 
 
 
-
+---
 
 **EXAMPLE API USAGE**
 
@@ -81,6 +81,7 @@ POST:
 
 This fills the database with 3 pages of Software internship postings in Austin and Seattle, 2 pages of Architect positions in Seattle, and 1 page of Attorney positions in Boston.
 
+---
 
 GET:
 
@@ -88,21 +89,24 @@ GET:
 
 Gets JSONObject.toString() of all job postings in the repository
 
+---
 
 
     --> http://localhost:8080/api/findByQuery?query=Software+Intern+Internship
 
 Gets JSONObject.toString() of all job postings in the repository that were added using the query param "Software+Intern+Internship"
 
-
+---
 
     --> http://localhost:8080/api/findByCompany?company=Google
 
 Gets JSONObject.toString() of all job postings in the repository posted by Google
 
-
+---
 
     --> http://localhost:8080/api/findByLocation?location=Seattle
 
 Gets JSONObject.toString() of all job postings with matching location value
+
+---
 
