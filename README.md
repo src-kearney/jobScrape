@@ -21,7 +21,7 @@ This project was built with Spring Boot and HTMLUnit.
                 |   +- ScrapeService.java
                 
               
-**API REQUEST PATHS**
+# API REQUEST PATHS
 
     --> http://localhost:8080/api/update?query={myQuery}&location={myLocation}&pages={myPages}
 
@@ -66,10 +66,10 @@ Returns JSONObject.toString() of all job postings held in database with matching
 
 ---
 
-**EXAMPLE API USAGE**
+# EXAMPLE API USAGE
 
 
-POST:
+**POST:**
 
     --> http://localhost:8080/api/update?query=Software+Intern+Internship&location=Austin&pages=3
 
@@ -83,7 +83,7 @@ This fills the database with 3 pages of Software internship postings in Austin a
 
 ---
 
-GET:
+**GET:**
 
     --> http://localhost:8080/api/findAll
 
